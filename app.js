@@ -31,7 +31,7 @@ app.post('/upload', (req, res) => {
             if(err) return console.log("ERROR: ", err);
        
                 worker
-                .recognize(data, "eng", {tessjs_create_pdf: "1"})
+                .recognize(data, "swe", {tessjs_create_pdf: "1"})
                 .progress(progress => {
                     console.log(progress);
                 })
